@@ -1,0 +1,143 @@
+:root{
+  --font-color : #333;
+  --bg-color : #eee;
+}
+
+[data-theme='dark']{
+  --font-color : #eee;
+  --bg-color : #333;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.page-style{
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: 300ms;
+  min-height: 90vh;
+}
+
+.page-style aside{
+  position: sticky;
+  top: 4px;
+  height: fit-content;
+}
+
+/* Note Card */
+
+.note-card div{
+  min-height: 320px;
+  border-bottom: solid lightgreen 6px;
+  transition: 300ms;
+  background-color: var(--bg-color);
+}
+
+.note-card h2{
+  color: var(--font-color);
+}
+
+.note-card div:hover{
+  border-bottom: solid lightgreen 12px;
+}
+
+.note-card span{
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.note-card a{
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+/* Note Detail */
+
+.note-detail h1,.title-input{
+  font-size: 72px;
+  color: var(--font-color);
+}
+
+.note-detail p,.body-input{
+  font-size: 22px;
+  min-height: 300px;
+  color: var(--font-color);
+}
+
+.body-input,.title-input {
+  background-color: transparent;
+  color: var(--font-color);
+  border: 0px;
+}
+
+
+/* Primary Button */
+
+.primary-btn{
+  background-color: lightblue;
+  border: 0px;
+  border-radius: 3px;
+  transition: 300ms;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.primary-btn:hover{
+  background-color: aqua;
+  color: white;
+}
+
+/* Secondary Button */
+
+.secondary-btn{
+  border: solid lightblue 1px;
+  border-radius: 3px;
+  transition: 300ms;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.secondary-btn:hover{
+  background-color: lightblue;
+  color: black;
+}
+
+/* Delete Button */
+
+.delete-btn{
+  background-color: lightcoral;
+  border: 0px;
+  border-radius: 3px;
+  transition: 300ms;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.delete-btn:hover{
+  background-color: red;
+  color: white;
+}
+
+/* Option Style */
+
+.option-style{
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+.option-style h5{
+  color: #333;
+}
